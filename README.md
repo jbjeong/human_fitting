@@ -68,7 +68,14 @@ $ python triangulation_mp.py --dataset data_root
 Output -> {pose3d.npz}
 
 #### 5. SMPL-X fitting
-Download SMPL-X model. (https://github.com/vchoutas/smplx#downloading-the-model)
+Download SMPL-X model. (https://github.com/vchoutas/smplx#downloading-the-model).  
+Put the SMPL-X model named 'models' in smpl-fit folder.  
+-human_fitting  
+&nbsp;&nbsp;-smplx-fit  
+&nbsp;&nbsp;&nbsp;&nbsp;-models  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-smplx  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-SMPLX_MALE.npz  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-...  
 docker: jbjeong/research:human_fitting
 ```bash
 $ cd {home}/human_fitting/smplx-fit
